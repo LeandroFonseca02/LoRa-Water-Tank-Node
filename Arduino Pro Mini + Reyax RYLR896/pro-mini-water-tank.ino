@@ -148,8 +148,8 @@ int readSensor(){
 void sendJsonData(){
   mySerial.begin(9600);
   doc["devEUI"] = devEUI;
-  doc["application"] = boardName;
-  doc["board"] = application;
+  doc["application"] = application;
+  doc["board"] = boardName;
 
   int sensorReadTries = 0;
   // Leitura do sensor
